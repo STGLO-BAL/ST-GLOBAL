@@ -1,0 +1,1 @@
+ALTER TABLE `trades` ADD `isDemo` boolean DEFAULT false NOT NULL;

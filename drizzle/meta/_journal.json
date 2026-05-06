@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1778069324186,
+      "tag": "0000_chief_colonel_america",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1778069450241,
+      "tag": "0001_secret_shooting_star",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1778069746031,
+      "tag": "0002_wandering_adam_warlock",
+      "breakpoints": true
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+# Project TODO
+
+- [x] Build mobile-first STGLOBAL customer platform layout with black/yellow 3D-inspired theme and English-only UI
+- [x] Add dark/light mode toggle across customer and admin interfaces
+- [x] Build Home page with hero/banner slider, live market data, and Hot/Crypto/Forex/Metals tabs
+- [x] Build Spot Trading page with buy/sell form and embedded TradingView chart widget
+- [x] Build Contracts page with UP/FALL trade buttons, 30s/60s duration selector, USDT amount input, profit display, and trade history
+- [x] Build Assets page showing USDT, BTC, and ETH wallet balances with Deposit, Withdraw, and Transfer actions
+- [x] Build Profile page showing email, User ID, and VIP level
+- [x] Build About page with STGLOBAL company description and mission statement
+- [x] Implement backend schema for users, wallets, trades, transactions, market settings, and admin audit records
+- [x] Implement email/password authentication support alongside existing session authentication, with password hashing and JWT-ready account fields
+- [x] Implement user management, wallet, trade execution, and transaction history procedures
+- [x] Integrate live market data using public Binance/CoinGecko-compatible endpoints and WebSocket price updates where possible
+- [x] Implement transparent short-term trading engine using entry price versus closing price as default result logic
+- [x] Build separate admin application route group with secure role-gated access
+- [x] Build admin dashboard for total users, total balances, and trade statistics
+- [x] Build admin user management for freeze/unfreeze accounts and password reset support
+- [x] Build admin wallet control for audited add/deduct balance adjustments
+- [x] Build admin deposit/withdraw approval workflow
+- [x] Build admin trade monitoring view
+- [x] Build admin system settings for profit percentage, fixed 30s/60s durations, feature toggles, and demo/simulation controls
+- [x] Implement only transparent and audited administrative trade controls; avoid hidden manipulation in the trading engine
+- [x] Add Vitest tests for trading engine and wallet/admin operations
+- [x] Run type checks/tests, inspect status, fix issues, and polish responsive UI
+- [x] Save final checkpoint and deliver preview to user
+- [x] Implement JWT verification in request context so email/password users can access protected APIs
+- [x] Deduct USDT stake on trade placement, validate sufficient funds, and enforce trade ownership checks
+- [x] Enforce backend settlement timing so 30s/60s contract trades cannot settle before expiry
+- [x] Wire JWT bearer tokens into the tRPC client request pipeline and persist email/password auth state
+- [x] Restrict admin trade outcome control to audited demo/simulation outcomes and avoid pre-expiry live settlement
+- [x] Implement login/register UI flows that save and clear STGLOBAL JWT tokens in local storage
+- [x] Add a dark/light theme toggle control to the separate Admin interface
+- [x] Implement a real hero/banner slider on the Home page
+- [x] Replace hardcoded forex/metals quotes with live API-backed market data and proper update handling
+- [x] Connect Spot buy/sell actions to a validated transaction/order workflow instead of a placeholder form
+- [x] Fix contract settlement to use each trade's stored symbol, not the current page selection
+- [x] Implement a real Transfer flow on the Assets page with validation and backend support
+- [x] Implement admin password reset support end-to-end with backend procedure, UI action, and validation
+- [x] Add Vitest coverage for wallet/admin operation rules such as transfer validation, spot order validation, transaction review semantics, and admin override scope
+- [x] Remove hardcoded forex/metals fallback quotes and show robust live-data error/loading handling instead
+- [x] Revalidate running app routes after clearing stale Admin route import errors
+- [x] Add explicit market-data loading and error states without synthetic fallback prices
+- [x] Directly verify /admin and key customer routes load after restart without Vite import errors

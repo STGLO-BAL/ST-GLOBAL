@@ -1,0 +1,11 @@
+import mysql from 'mysql2/promise';
+async function run() {
+  const connection = await mysql.createConnection({
+    uri: "mysql://3hbmhtcHz8aDc2u.root:9vRZRwtJyL7VsqL6@gateway01.ap-southeast-1.prod.alicloud.tidbcloud.com:4000/sys",
+    ssl: { rejectUnauthorized: true }
+  });
+  await connection.query('CREATE DATABASE IF NOT EXISTS stglobal');
+  console.log('Database stglobal created successfully');
+  await connection.end();
+}
+run().catch(console.error);

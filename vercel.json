@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "framework": "vite",
+  "buildCommand": "pnpm build",
+  "outputDirectory": "dist/public",
+  "rewrites": [
+    {
+      "source": "/api/trpc/(.*)",
+      "destination": "/api/trpc"
+    }
+  ],
+  "functions": {
+    "api/index.js": {
+      "runtime": "vercel-node@latest"
+    }
+  }
+}
